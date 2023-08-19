@@ -19,4 +19,4 @@ runs:
     - run: $GITHUB_ACTION_PATH/lint.sh
       shell: sh
       env:
-        INPUT_TARGET: ${{github.workspace}}${{/}}${{ inputs.target }}
+        INPUT_TARGET: ${{github.workspace}}${{'/'}}${{ inputs.target }}
