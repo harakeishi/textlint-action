@@ -1,0 +1,22 @@
+{
+  "name": "textlint-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harakeishi/textlint-action.git"
+  },
+  "author": "keishi hara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harakeishi/textlint-action/issues"
+  },
+  "homepage": "https://github.com/harakeishi/textlint-action#readme",
+  "devDependencies": {
+    "textlint": "^13.3.3"
+  }
+}
