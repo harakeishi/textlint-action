@@ -18,6 +18,8 @@ runs:
   steps:
     - run: npx textlint -v
       shell: bash
+    - run: npm ci
+      shell: bash
     - run: pwd
       shell: bash
     - run: ls -la
