@@ -1,12 +1,26 @@
 name: 'textlint Action'
 description: 'This action allows you to proofread your text using textlint.'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  target:
+    description: 'Text lint target'
     required: true
-    default: 'World'
+    default: '.'
+  config:
+    description: 'Text lint config'
+    required: false
+    default: ''
+# outputs:
+#   textlint-version:
+#     description: 'The version of textlint'
+#     value: ${{ steps.textlint.outputs.textlint-version }}
 runs:
   using: "composite"
   steps:
     - run: npx textlint -v
+      shell: bash
+    - run: pwd
+      shell: bash
+    - run: ls -la
+      shell: bash
+    - run: npx textlint --rule no-todo ${{ inputs.target }}
       shell: bash
