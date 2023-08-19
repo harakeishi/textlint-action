@@ -1,9 +1,4 @@
 #!/bin/bash
 
 cd "${GITHUB_ACTION_PATH}" || exit
-pwd
-ls -la
-npm ci
-npx textlint --rule no-todo ${INPUT_TARGET} > result.txt
-cat result.txt
-echo "finish"
+npx textlint --rule no-todo ${INPUT_TARGET}
