@@ -5,5 +5,5 @@ pwd
 ls -la
 npm ci
 npx textlint --rule no-todo ${INPUT_TARGET} > result.txt
-echo result.txt
+cat result.txt
 echo "finish"
