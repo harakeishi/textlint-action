@@ -22,7 +22,5 @@ runs:
       shell: bash
     - run: ls -la
       shell: bash
-    - run: npm install
-      shell: bash
     - run: npx textlint --rule no-todo ${{ inputs.target }}
       shell: bash
