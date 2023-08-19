@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "${GITHUB_WORKSPACE}" || exit
+cd "${GITHUB_ACTION_PATH}" || exit
 pwd
 ls -la
 npm ci
