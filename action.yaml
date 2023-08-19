@@ -20,3 +20,4 @@ runs:
       shell: sh
       env:
         INPUT_TARGET: ${{github.workspace}}${{'/'}}${{ inputs.target }}
+        INPUT_CONFIG: ${{github.workspace}}${{'/'}}${{ inputs.config }}
