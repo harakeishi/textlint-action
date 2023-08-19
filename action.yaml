@@ -19,11 +19,7 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-    - run: cd ${GITHUB_ACTION_PATH}
-      shell: bash
-    - run: pwd
-      shell: bash
-    - run: ls -la
+    - run: ls -la ${GITHUB_ACTION_PATH}
       shell: bash
     - run: npx textlint -v
       shell: bash
