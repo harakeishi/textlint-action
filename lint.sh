@@ -4,4 +4,6 @@ cd "${GITHUB_ACTION_PATH}" || exit
 pwd
 ls -la
 npm ci
-npx textlint --rule no-todo ${INPUT_TARGET}
+npx textlint --rule no-todo ${INPUT_TARGET} > result.txt
+echo result.txt
+echo "finish"
